@@ -1,0 +1,1 @@
+Prefab items go in this folder, prefabs will have a blue square next to the name in the project manager, and have blue text in the hierarchy
