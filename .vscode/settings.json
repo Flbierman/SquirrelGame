@@ -51,5 +51,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "SqPreview.sln"
+    "dotnet.defaultSolution": "SqPreview.sln",
+    "dotnet.preferCSharpExtension": true
 }
