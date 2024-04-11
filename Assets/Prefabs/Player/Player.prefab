@@ -116,7 +116,6 @@ GameObject:
   - component: {fileID: 5607823412398978155}
   - component: {fileID: 4130565058219492172}
   - component: {fileID: 2186853948642178373}
-  - component: {fileID: -8725456141576956988}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -186,18 +185,6 @@ MonoBehaviour:
   turnSmoothTime: 0.1
   grounded: 0
   velocity: {x: 0, y: 0, z: 0}
---- !u!114 &-8725456141576956988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8471999139312667361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9de35272ac5c43f4b928691b466923ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8856875592420888146
 GameObject:
   m_ObjectHideFlags: 0
