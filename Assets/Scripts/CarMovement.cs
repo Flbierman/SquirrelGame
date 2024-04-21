@@ -14,7 +14,7 @@ public class CarMovement : MonoBehaviour
 
     {
         m_rigidbody = GetComponent<Rigidbody>();
-        m_speed = 5f;
+        m_speed = 25f;
 
     }
 
