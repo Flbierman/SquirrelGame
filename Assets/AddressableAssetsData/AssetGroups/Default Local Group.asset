@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: c582f430582400e419a5a02dc05f8225
+  m_SerializeEntries:
+  - m_GUID: f119644f5530c1044aa946bb6b18bb13
+    m_Address: Assets/Prefabs/Vehicles/Vehicle with Separated Wheels/Vehicle_Truck_color02_separate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cars
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 636cb627739652c418fcc4f683a138b1
+    m_Address: Assets/Prefabs/Vehicles/Vehicle with Separated Wheels/Vehicle_Truck_color01_separate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cars
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fba5e236738a7c940b3a8d031c307794
+    m_Address: Assets/Prefabs/Vehicles/Vehicle with Separated Wheels/Vehicle_Taxi_separate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cars
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f0ffa104f4ba20b40a0421d7c2b5f098
+    m_Address: Assets/Prefabs/Vehicles/Vehicle with Separated Wheels/Vehicle_SUV_color03_separate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cars
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a7cd9ad30e9d4c146986aa1e6694b9e5
+    m_Address: Assets/Prefabs/Vehicles/Vehicle with Separated Wheels/Vehicle_SUV_color02_separate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cars
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1dabf884aa0716149a1bc775f0b620d8
+    m_Address: Assets/Prefabs/Vehicles/Vehicle with Separated Wheels/Vehicle_SUV_color01_separate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cars
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a7b60e70606f80245b2f8bc7ce2fadb6
+    m_Address: Assets/Prefabs/Vehicles/Vehicle with Separated Wheels/Vehicle_Police
+      Car_separate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cars
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 675baac8bae68964e948aabc6ff2857c
+    m_Address: Assets/Prefabs/Vehicles/Vehicle with Separated Wheels/Vehicle_Pick
+      up Truck_color03_separate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cars
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b1969db97c2d8604ba4bfe3000a13858
+    m_Address: Assets/Prefabs/Vehicles/Vehicle with Separated Wheels/Vehicle_Pick
+      up Truck_color02_separate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cars
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fc2b2b65264c13f48a615fa7dbc2ef24
+    m_Address: Assets/Prefabs/Vehicles/Vehicle with Separated Wheels/Vehicle_Pick
+      up Truck_color01_separate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cars
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a8a6e2e210e71bc4ab5ba85122928ac8
+    m_Address: Assets/Prefabs/Vehicles/Vehicle with Separated Wheels/Vehicle_Container_color03_separate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cars
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 025a3497fa872fe4ebfed7edb8eb310c
+    m_Address: Assets/Prefabs/Vehicles/Vehicle with Separated Wheels/Vehicle_Container_color02_separate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cars
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b836817eff26a034bbd13884590ce648
+    m_Address: Assets/Prefabs/Vehicles/Vehicle with Separated Wheels/Vehicle_Container_color01_separate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cars
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 11a57a102cdb5e642899ceab079f1938
+    m_Address: Assets/Prefabs/Vehicles/Vehicle with Separated Wheels/Vehicle_Car_color03_separate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cars
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: deba68cd512c1d8448349706921ceeff
+    m_Address: Assets/Prefabs/Vehicles/Vehicle with Separated Wheels/Vehicle_Car_color02_separate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cars
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d267fbb9e36c6e4458c9a8756d725a79
+    m_Address: Assets/Prefabs/Vehicles/Vehicle with Separated Wheels/Vehicle_Car_color01_separate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cars
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1508f459923b7df4889f466e17864ab4
+    m_Address: Assets/Prefabs/Vehicles/Vehicle with Separated Wheels/Vehicle_Truck_color03_separate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cars
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e1697ef5073defa458e40968ffff2b30
+    m_Address: Assets/Prefabs/Vehicles/Vehicle with Separated Wheels/Vehicle_Bus_color03_separate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cars
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3cfde9a41ff096140a1bfec6f262d0f0
+    m_Address: Assets/Prefabs/Vehicles/Vehicle with Separated Wheels/Vehicle_Bus_color02_separate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cars
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: de535534204e83f4e84497ac553192eb
+    m_Address: Assets/Prefabs/Vehicles/Vehicle with Separated Wheels/Vehicle_Bus_color01_separate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cars
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b3f4ad6e44f81784ba0ebe95aadf2a7d
+    m_Address: Assets/Prefabs/Vehicles/Vehicle with Separated Wheels/Vehicle_Ambulance_separate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cars
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 7e7e19265a7687644a154360ff03f83b, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 5cd32807aebf0964882896fa92e09b7d, type: 2}
+    - {fileID: 11400000, guid: 6395409a205636142afff68d36f3ccdb, type: 2}
