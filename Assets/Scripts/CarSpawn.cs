@@ -79,7 +79,8 @@ public class CarSpawn : MonoBehaviour
             Vector3 direction = (endPoint.position - startPoint.position).normalized; // Get the direction vector towards the endpoint
             Quaternion rotation = Quaternion.LookRotation(direction); // Create a rotation that looks along the direction vector
             GameObject newCar = Instantiate(carPrefabs[index], startPoint.position, rotation); // Instantiate the car facing the endpoint
-            currentCars.Add(newCar); // Add the new car to the list
+            newCar.transform.SetParent(GameObject.Find("Car Spawner").transform);
+            currentCars.Add(newCar);
         }
         else
         {
