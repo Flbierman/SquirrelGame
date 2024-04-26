@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour
 {
 
     public static GameController Instance;
-
+    public bool buttonTrigger = false;
     //Add properties to track on a global scale here, do not make them static, we only need the GC itself to be static, everything else will be accessesing the static instance.
     //Access the properties via GameController.Instance.<propertyName>
     //With this structure we can persist data between scenes. 
@@ -25,6 +25,13 @@ public class GameController : MonoBehaviour
         //Assign the first instance of the gameController to do not destroy for persistence.
         Instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+
+    void Update(){
+        if (buttonTrigger){
+            SendMessage("PlayerDied", SendMessageOptions.DontRequireReceiver);
+            buttonTrigger = false;
+        }
     }
 
     //FUTURE REFACTOR
