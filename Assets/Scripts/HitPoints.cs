@@ -16,6 +16,14 @@ public class HitPoints : MonoBehaviour
     private Color originalColor;
     private CharacterController characterController;
 
+    //Event and event delegate for died flag
+    public delegate void PlayerDied();
+    public static event PlayerDied OnPlayerDied;
+
+    //Event and Delegate for playerRespawned
+    public delegate void PlayerRespawned();
+    public static event PlayerRespawned OnPlayerRespawned;
+
     //Our logic is handled a bit backwards here, if the HP owning object touches something with an attack, this object takes damage
     private void OnTriggerEnter(Collider collision)
     {
@@ -43,14 +51,22 @@ public class HitPoints : MonoBehaviour
     {
         if (currentHP <= 0)
         {
-            Die();
+            PlayerDeathActions();
+            //This sends up the OnPlayerDied Event to the system for subscribers to respond to
+            
         }
     }
 
-    private void Die()
+    private void PlayerDeathActions()
     {
         if (!isDead)
         {
+            //This is the long form of OnPlayerDied?.Invoke(); which is recomended by VSCode for the event call Leaving it here for educational purpose.
+            // if (OnPlayerDied != null){
+            //     OnPlayerDied();
+            // }
+            OnPlayerDied?.Invoke();
+
             //turning off player control and flag dead
             characterController.enabled = false;
             isDead = true;
@@ -78,5 +94,7 @@ public class HitPoints : MonoBehaviour
         currentHP = maxHP;
         isDead = false;
         rendererB.material.color = originalColor;
+        //Sending the event that the player respawned.
+        OnPlayerRespawned?.Invoke();
     }
 }

@@ -1,26 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Clock : MonoBehaviour
 {
     public float timeSinceDeath;
     public bool playerAlive = true;
+    public TextMeshProUGUI timerText;
 
     // Start is called before the first frame update
     void Start()
     {
         timeSinceDeath = 0f;
+        //Subscribing to the Events sent by HitPoints
+        HitPoints.OnPlayerDied += PlayerDied;
+        HitPoints.OnPlayerRespawned += PlayerRespawn;
     }
 
     private void PlayerDied(){
-        Debug.Log("Other function called it! Yay!");
         playerAlive = false;
         timeSinceDeath = 0f;
     }
 
-    public void PlayerRespawned(){
+    private void PlayerRespawn(){
         playerAlive = true;
+    }
+
+    void DisplayTime(float timeInSeconds)
+    {
+        int minutes = Mathf.FloorToInt(timeInSeconds / 60);
+        int seconds = Mathf.FloorToInt(timeInSeconds % 60);
+
+        string timeString = string.Format("{0:00}:{1:00}", minutes, seconds);
+        timerText.text = timeString;
     }
 
     // Update is called once per frame
@@ -29,5 +43,8 @@ public class Clock : MonoBehaviour
         if (playerAlive){
             timeSinceDeath += Time.deltaTime;
         }
+        DisplayTime(timeSinceDeath);
     }
+
+    
 }

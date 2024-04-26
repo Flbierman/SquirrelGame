@@ -29,7 +29,6 @@ public class GameController : MonoBehaviour
 
     void Update(){
         if (buttonTrigger){
-            SendMessage("PlayerDied", SendMessageOptions.DontRequireReceiver);
             buttonTrigger = false;
         }
     }
