@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5873058029917152429}
   - component: {fileID: 8739725153968181642}
   - component: {fileID: 3445838907461046177}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6854439894564937020}
   - component: {fileID: 4790158644697885414}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: topdownVirtualCam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   - component: {fileID: 4641073099077962339}
   - component: {fileID: 7367309393125431359}
   - component: {fileID: 8967744279994725591}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MainCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -288,9 +288,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2860619221382258887}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TopDownPlayerCharacter
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -365,9 +365,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7803687331451012656, guid: 16a57b20707ff46b0b48670c00a3bf7b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8471999139312667361, guid: 16a57b20707ff46b0b48670c00a3bf7b, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8471999139312667361, guid: 16a57b20707ff46b0b48670c00a3bf7b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856875592420888146, guid: 16a57b20707ff46b0b48670c00a3bf7b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 404224793542679031, guid: 16a57b20707ff46b0b48670c00a3bf7b, type: 3}

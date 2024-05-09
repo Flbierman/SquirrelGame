@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7174927422048834305}
   - component: {fileID: 8773597828976326963}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 3rd Person CameraVirtualCam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4123430320794558720}
   - component: {fileID: 7999167356723429070}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BottomRig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 1224446062033187556}
   - component: {fileID: 2520829255838946872}
   - component: {fileID: 5617905188832239177}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,7 +356,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5010730167470965958}
   - component: {fileID: 8603947216746608129}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MiddleRig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -434,9 +434,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2735080035565893825}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 3rdPersonPlayerCharacter
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -469,7 +469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2253014141001006742}
   - component: {fileID: 7185972527107944326}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TopRig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -550,7 +550,7 @@ GameObject:
   - component: {fileID: 5457325191133563672}
   - component: {fileID: 1880137122692285795}
   - component: {fileID: 5084254227653305290}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MainCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -677,7 +677,7 @@ GameObject:
   - component: {fileID: 419109767468607631}
   - component: {fileID: 339044686222372350}
   - component: {fileID: 524290371020308391}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -804,7 +804,7 @@ GameObject:
   - component: {fileID: 8726652614105143817}
   - component: {fileID: 1724518924302934681}
   - component: {fileID: 61180661588861372}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -971,9 +971,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7803687331451012656, guid: 16a57b20707ff46b0b48670c00a3bf7b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8471999139312667361, guid: 16a57b20707ff46b0b48670c00a3bf7b, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8471999139312667361, guid: 16a57b20707ff46b0b48670c00a3bf7b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856875592420888146, guid: 16a57b20707ff46b0b48670c00a3bf7b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 404224793542679031, guid: 16a57b20707ff46b0b48670c00a3bf7b, type: 3}
