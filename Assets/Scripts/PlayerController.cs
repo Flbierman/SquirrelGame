@@ -22,6 +22,15 @@ public class PlayerController : MonoBehaviour
         speed += amount;
     }
 
+    private void OnTriggerEnter(Collider collision)
+    {
+        Goal other = collision.gameObject.GetComponent<Goal>();
+        if (other != null)
+        {
+            //TODO: Do something on reaching goal
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
