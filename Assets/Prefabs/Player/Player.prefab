@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7114475663385809034}
   - component: {fileID: 634883430321476110}
   - component: {fileID: 404224793542679031}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,9 +117,9 @@ GameObject:
   - component: {fileID: 4130565058219492172}
   - component: {fileID: 2186853948642178373}
   - component: {fileID: 5644363543260992513}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -186,6 +186,7 @@ MonoBehaviour:
   turnSmoothTime: 0.1
   grounded: 0
   velocity: {x: 0, y: 0, z: 0}
+  isInvincible: 0
 --- !u!114 &5644363543260992513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,6 +199,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e632fbdc69eaa64e90451ea9e979008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Acorn: 0
+  acronText: {fileID: 0}
 --- !u!1 &8856875592420888146
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,7 +212,7 @@ GameObject:
   - component: {fileID: 2951724949819195626}
   - component: {fileID: 4753106869029800561}
   - component: {fileID: 3929181801206592237}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PlayerObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
