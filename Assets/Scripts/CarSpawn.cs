@@ -1,4 +1,4 @@
-//This program spawns cars at a set point and  terminates them when they reach another point. New cars are spawned in time intervals. Code written with ChatGPT
+//This program spawns cars at a set point and terminates them when they reach another point. New cars are spawned in time intervals. Code written with ChatGPT
 
 using UnityEngine;
 using System.Collections;
@@ -63,7 +63,6 @@ public class CarSpawn : MonoBehaviour
             handle.Result.CopyTo(carPrefabs, 0);
             prefabsLoaded = true;
             StartCoroutine(SpawnCarsWithDelay()); // Start spawning only after prefabs are loaded
-            Debug.Log("Car prefabs loaded successfully.");
         }
         else
         {

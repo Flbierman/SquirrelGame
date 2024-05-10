@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform cam;
     [SerializeField] private CharacterController controller;
     [Space]
-    [SerializeField] private float speed = 6f;
+    [SerializeField] public float speed = 6f;
     [SerializeField] private float jumpHeight = 3f;
     [SerializeField] private float gravity = -9.8f;
     [SerializeField] private float turnSmoothTime = 0.1f;
@@ -16,12 +16,16 @@ public class PlayerController : MonoBehaviour
     //States
     private float turnSmoothVelocity;
     [SerializeField] private Vector3 velocity;
-
-
+    [SerializeField] private bool isInvincible = false;
+    public void IncreaseSpeed(float amount)
+    {
+        speed += amount;
+    }
 
     // Update is called once per frame
     void Update()
     {
+        if (isInvincible)
         grounded = controller.isGrounded;
         float horizontalMove = Input.GetAxisRaw("Horizontal");
         float verticalMove = Input.GetAxisRaw("Vertical");
@@ -64,9 +68,4 @@ public class PlayerController : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
 
     }
-
-
-
-
-
 }
