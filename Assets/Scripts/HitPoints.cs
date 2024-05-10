@@ -49,8 +49,10 @@ public class HitPoints : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentHP <= 0)
+        //Adding is dead flag to prevent multiple calls
+        if (currentHP <= 0 && !isDead)
         {
+            Debug.Log("player hp hit 0 is dead");
             PlayerDeathActions();
             //This sends up the OnPlayerDied Event to the system for subscribers to respond to
             
@@ -59,6 +61,7 @@ public class HitPoints : MonoBehaviour
 
     private void PlayerDeathActions()
     {
+        //redundant check
         if (!isDead)
         {
             //This is the long form of OnPlayerDied?.Invoke(); which is recomended by VSCode for the event call Leaving it here for educational purpose.

@@ -7,7 +7,7 @@ using TMPro;
 
 public class AcornCollection : MonoBehaviour
 {
-    private int Acorn = 0; // Stores the amount of acorns the player has collected
+    [SerializeField] private int Acorn = 0; // Stores the amount of acorns the player has collected
 
     public TextMeshProUGUI acronText;
 

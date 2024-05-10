@@ -2,15 +2,29 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 
 public class ScoreTrigger : MonoBehaviour
 {
     public int pointsToAdd = 100; // Points added when road is crossed
-    public ScoreKeeper scoreKeeper; // Public reference to the ScoreKeeper component
+    private ScoreKeeper scoreKeeper; // Public reference to the ScoreKeeper component
     public float delay = 1.0f; // Time interval between earning points
+    public bool recurring = false;
     private bool canScore = true;
+
+    
+
+
+    private void Start(){
+        //This pattern will initialize our connections without needing to do it manually
+        GameObject uiCanvas = GameObject.Find("UICanvas");
+        if (uiCanvas != null){
+            scoreKeeper = uiCanvas.GetComponentInChildren<ScoreKeeper>();
+
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -24,6 +38,9 @@ public class ScoreTrigger : MonoBehaviour
             else
             {
                 Debug.LogError("ScoreKeeper reference not set on ScoreTrigger.");
+            }
+            if (!recurring){
+                Destroy(gameObject);
             }
         }
     }
