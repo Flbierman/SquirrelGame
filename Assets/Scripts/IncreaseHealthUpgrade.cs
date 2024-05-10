@@ -9,6 +9,14 @@ public class IncreaseHealthUpgrade : MonoBehaviour
     public AcornCollection acornCollection;
     public int healthUpgradeCost = 20; // Amount of Acorns to purchase upgrades
 
+    void Start(){
+        if (playerHitPoints == null){
+            playerHitPoints = GameObject.FindObjectOfType<HitPoints>();
+        }
+        if (acornCollection == null){
+            acornCollection = GameObject.FindObjectOfType<AcornCollection>();
+        }
+    }
     public void TryIncreaseHealth()
     {
         if (acornCollection.Acorns >= healthUpgradeCost) // Checks if the player has enough acorns

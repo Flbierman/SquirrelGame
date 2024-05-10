@@ -9,7 +9,7 @@ public class SpeedBooster : MonoBehaviour
     public AcornCollection acornCollection;
     public TextMeshProUGUI messageText;
     public float speedIncreaseAmount = 3f;
-    public int acornCost = 0;
+    public int acornCost = 15;
     public GameObject upgradeMenu;
 
     private void Start()
