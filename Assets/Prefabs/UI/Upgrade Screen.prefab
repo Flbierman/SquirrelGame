@@ -965,7 +965,7 @@ MonoBehaviour:
   acornCollection: {fileID: 0}
   messageText: {fileID: 0}
   speedIncreaseAmount: 3
-  acornCost: 0
+  acornCost: 15
   upgradeMenu: {fileID: 8626785519772465381}
 --- !u!1001 &3052302393231245644
 PrefabInstance:
@@ -1211,7 +1211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHitPoints: {fileID: 0}
   acornCollection: {fileID: 0}
-  healthUpgradeCost: 0
+  healthUpgradeCost: 20
 --- !u!114 &7505417639874418088 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4788290989866734820, guid: 541f3083afdda4a4b8dec46190fd8fe0, type: 3}
