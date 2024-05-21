@@ -6,14 +6,14 @@ using UnityEngine.UI;
 
 public class Clock : MonoBehaviour
 {
-    public float timeSinceDeath;
+    public float timeOnLevel;
     public bool playerAlive = true;
     public TextMeshProUGUI timerText;
 
     // Start is called before the first frame update
     void Start()
     {
-        timeSinceDeath = 0f;
+        timeOnLevel = 0f;
         //Subscribing to the Events sent by HitPoints
         HitPoints.OnPlayerDied += PlayerDied;
         HitPoints.OnPlayerRespawned += PlayerRespawn;
@@ -21,7 +21,6 @@ public class Clock : MonoBehaviour
 
     private void PlayerDied(){
         playerAlive = false;
-        timeSinceDeath = 0f;
     }
 
     private void PlayerRespawn(){
@@ -41,9 +40,9 @@ public class Clock : MonoBehaviour
     void Update()
     {
         if (playerAlive){
-            timeSinceDeath += Time.deltaTime;
+            timeOnLevel += Time.deltaTime;
         }
-        DisplayTime(timeSinceDeath);
+        DisplayTime(timeOnLevel);
     }
 
     
